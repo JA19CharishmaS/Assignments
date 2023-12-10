@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label >Name to delete:</label>
+      <input type="text" name="name" [(ngModel)]="nameToDelete" required>
+    </div>
+    <div>
+      <label >Team to delete:</label>
+      <input type="text" name="team" [(ngModel)]="teamToDelete" required>
+    </div>
+    
+    <button type="submit" [disabled]="!nameToDelete">Delete Name</button>
+  </form>
+  
